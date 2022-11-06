@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="defaultObfuscationEnv" value="named:intermediary" />
+        <option name="inMapFileNamedIntermediary" value="C:\Users\Koro\.gradle\caches\fabric-loom\1.19.2\net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2\mappings.tiny" />
+        <option name="outMapFileNamedIntermediary" value="D:\workspace\KoroUtils\backpack_backup\build\loom-cache\mixin-map-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.test.tiny" />
+        <option name="outRefMapFile" value="D:\workspace\KoroUtils\backpack_backup\build\classes\java\test\test-BackpackBackup-refmap.json" />
+        <option name="quiet" value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.24/13a394eed5c4f9efb2a6d956e2086f1d81e857d9/lombok-1.18.24.jar" />
+        </processorPath>
+        <module name="backpack_backup.test" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="defaultObfuscationEnv" value="named:intermediary" />
+        <option name="inMapFileNamedIntermediary" value="C:\Users\Koro\.gradle\caches\fabric-loom\1.19.2\net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2\mappings.tiny" />
+        <option name="outMapFileNamedIntermediary" value="D:\workspace\KoroUtils\backpack_backup\build\loom-cache\mixin-map-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.main.tiny" />
+        <option name="outRefMapFile" value="D:\workspace\KoroUtils\backpack_backup\build\classes\java\main\BackpackBackup-refmap.json" />
+        <option name="quiet" value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.24/13a394eed5c4f9efb2a6d956e2086f1d81e857d9/lombok-1.18.24.jar" />
+        </processorPath>
+        <module name="backpack_backup.main" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

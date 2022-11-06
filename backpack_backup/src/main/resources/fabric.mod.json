@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "backpack-backup",
+  "version": "${version}",
+  "name": "BackpackBackup",
+  "description": "Configurable backpack backup",
+  "authors": [
+    "KenRouKoro"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/BackpackBackup/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "cn.korostudio.backpackbackup.BackpackBackup"
+    ]
+  },
+  "mixins": [
+    "BackpackBackup.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.19.2",
+    "koro-utils-lib": ">=1.0.0"
+  }
+}

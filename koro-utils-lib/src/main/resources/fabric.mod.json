@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "koro-utils-lib",
+  "version": "${version}",
+  "name": "Koro Utils Lib",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/koro-utils-lib/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "cn.korostudio.koroutilslib.KoroUtilsLib"
+    ]
+  },
+  "mixins": [
+    "koro-utils-lib.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
