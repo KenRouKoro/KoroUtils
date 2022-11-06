@@ -16,6 +16,7 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 public class BackpackBackup implements ModInitializer {
     @Getter
     protected static Setting BackpackBackupSetting = new Setting(FileUtil.touch(System.getProperty("user.dir") + "/config/BackpackBackup.setting"), CharsetUtil.CHARSET_UTF_8, true);
+
     @Override
     public void onInitialize() {
         BackupCommand.register();

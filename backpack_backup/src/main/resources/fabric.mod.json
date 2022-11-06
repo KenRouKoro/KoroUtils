@@ -9,7 +9,7 @@
   ],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/BackpackBackup/icon.png",
+  "icon": "assets/backpack-backup/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [

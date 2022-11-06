@@ -3,7 +3,6 @@ package cn.korostudio.backpackbackup.data;
 import lombok.Data;
 import net.minecraft.nbt.NbtCompound;
 
-import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 @Data

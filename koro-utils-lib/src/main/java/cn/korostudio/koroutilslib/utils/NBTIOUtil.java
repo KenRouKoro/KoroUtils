@@ -10,7 +10,7 @@ import java.io.IOException;
 public class NBTIOUtil {
     public static byte[] nbtToByteArray(NbtCompound nbt) throws IOException {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        NbtIo.writeCompressed(nbt,byteArrayOutputStream);
+        NbtIo.writeCompressed(nbt, byteArrayOutputStream);
         byte[] buf = byteArrayOutputStream.toByteArray();
         byteArrayOutputStream.close();
         return buf;

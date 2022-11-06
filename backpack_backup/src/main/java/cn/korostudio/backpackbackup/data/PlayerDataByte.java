@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 @Data
 public class PlayerDataByte implements Serializable {
-     protected ArrayList<byte[]>main = new ArrayList<>();
-     protected ArrayList<byte[]>armor = new ArrayList<>();
-     protected ArrayList<byte[]>offHand = new ArrayList<>();
+    protected ArrayList<byte[]> main = new ArrayList<>();
+    protected ArrayList<byte[]> armor = new ArrayList<>();
+    protected ArrayList<byte[]> offHand = new ArrayList<>();
 }

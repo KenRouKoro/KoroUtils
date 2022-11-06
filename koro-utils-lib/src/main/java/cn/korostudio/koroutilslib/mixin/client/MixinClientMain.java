@@ -7,8 +7,8 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(Main.class)
 public class MixinClientMain {
-    @Redirect(method = "<clinit>",at = @At(value = "INVOKE",target = "Ljava/lang/System;setProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"))
-    private static String fixAWT(String key, String value){
+    @Redirect(method = "<clinit>", at = @At(value = "INVOKE", target = "Ljava/lang/System;setProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"))
+    private static String fixAWT(String key, String value) {
         return null;
     }
 }

@@ -15,7 +15,7 @@ import java.util.List;
 
 public class ItemUtil {
 
-    public static String getPlayerItem(ServerPlayerEntity player){
+    public static String getPlayerItem(ServerPlayerEntity player) {
         DefaultedList<ItemStack> main = player.getInventory().main;
         DefaultedList<ItemStack> armor = player.getInventory().armor;
         DefaultedList<ItemStack> offHand = player.getInventory().offHand;
@@ -40,13 +40,14 @@ public class ItemUtil {
 
         JSONObject dataJSON = new JSONObject();
 
-        dataJSON.putOnce("mainJSON",mainJSON);
-        dataJSON.putOnce("armorJSON",armorJSON);
-        dataJSON.putOnce("offHandJSON",offHandJSON);
+        dataJSON.putOnce("mainJSON", mainJSON);
+        dataJSON.putOnce("armorJSON", armorJSON);
+        dataJSON.putOnce("offHandJSON", offHandJSON);
 
         return dataJSON.toString();
     }
-    public static boolean setPlayerItem(ServerPlayerEntity player,String itemSNBT){
+
+    public static boolean setPlayerItem(ServerPlayerEntity player, String itemSNBT) {
 
         JSONObject PlayerItemDataJSON = JSONUtil.parseObj(itemSNBT);
 
