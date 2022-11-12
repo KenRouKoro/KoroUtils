@@ -5,6 +5,33 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/AWTSupportForMinecraft" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/AWTSupportForMinecraft" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/HighUnrestricted" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/HighUnrestricted" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/MultidimensionalManager" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/MultidimensionalManager" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/backpack_backup" />
         <option name="modules">
           <set>
