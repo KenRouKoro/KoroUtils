@@ -7,6 +7,7 @@
     <file type="web" url="file://$PROJECT_DIR$/HighUnrestricted" />
     <file type="web" url="file://$PROJECT_DIR$/koro-utils-lib" />
     <file type="web" url="file://$PROJECT_DIR$/MultidimensionalManager" />
+    <file type="web" url="file://$PROJECT_DIR$/SightDistanceUnlocked" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
