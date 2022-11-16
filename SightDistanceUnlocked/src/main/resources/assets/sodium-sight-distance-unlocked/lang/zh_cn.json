@@ -72,7 +72,7 @@
   "sodium.options.buttons.apply": "应用",
   "sodium.options.use_persistent_mapping.name": "使用持久性映射",
   "sodium.options.use_persistent_mapping.tooltip": "如果启用，少量的内存将被持久地映射为区块上传的暂存缓冲区，有助于减少加载或更新区块时的CPU开销和帧时间不稳定。\n\n需要OpenGL 4.4或ARB_buffer_storage功能。",
-  "sodium.options.chunk_memory_allocator.tooltip": "选择将用于分块渲染的内存分配器。\n- 异步: 最快的选项，与大多数现代图形驱动配合良好。\n- 同步。老式图形驱动程序的后备选项。可能会显著增加内存的使用。",
+  "sodium.options.chunk_memory_allocator.tooltip": "选择将用于分块渲染的内存分配器。\n- 异步: \n最快的选项，与大多数现代图形驱动配合良好。\n- 同步: \n老式图形驱动程序的后备选项。可能会显著增加内存的使用。",
   "sodium.options.chunk_memory_allocator.name": "区块内存分配器",
   "sodium.options.chunk_memory_allocator.async": "异步",
   "sodium.options.chunk_memory_allocator.swap": "同步",

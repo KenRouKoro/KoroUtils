@@ -24,7 +24,7 @@ public class GameOptionsMixin {
     @Redirect(method = "<init>",at = @At(value = "FIELD",target = "Lnet/minecraft/client/option/GameOptions;viewDistance:Lnet/minecraft/client/option/SimpleOption;"))
     public void setGameOptions(GameOptions instance, SimpleOption<Integer> value1){
         SodiumSightDistanceUnlockedClient.setGameOptions(((GameOptions)(Object)this));
-        viewDistance = new SimpleOption<Integer>("options.renderDistance", SimpleOption.emptyTooltip(), (optionText, value) -> GameOptions.getGenericValueText(optionText, Text.translatable("options.chunks", value)), new SimpleOption.ValidatingIntSliderCallbacks(2, 1024), 512, value -> MinecraftClient.getInstance().worldRenderer.scheduleTerrainUpdate());
+        viewDistance = new SimpleOption<>("options.renderDistance", SimpleOption.emptyTooltip(), (optionText, value) -> GameOptions.getGenericValueText(optionText, Text.translatable("options.chunks", value)), new SimpleOption.ValidatingIntSliderCallbacks(2, 1024), 512, value -> MinecraftClient.getInstance().worldRenderer.scheduleTerrainUpdate());
     }
 
 }
