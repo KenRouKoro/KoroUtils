@@ -1,0 +1,1 @@
+cn.korostudio.kubejsextratools.kubejs.ExtraToolsKubeJSPlugin

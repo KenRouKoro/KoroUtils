@@ -10,8 +10,16 @@ import java.util.Map;
 import java.util.concurrent.Executor;
 
 public interface MinecraftServerFieldGetter {
-    Executor getWorkerExecutor();
-    LevelStorage.Session getSession();
-    WorldGenerationProgressListener getWorldGenerationProgressListener();
-    Map<RegistryKey<World>, ServerWorld> getWorldsMap();
+    default Executor getWorkerExecutor(){
+        return null;
+    }
+    default LevelStorage.Session getSession(){
+        return null;
+    }
+    default WorldGenerationProgressListener getWorldGenerationProgressListener(){
+        return null;
+    }
+    default Map<RegistryKey<World>, ServerWorld> getWorldsMap(){
+        return null;
+    }
 }

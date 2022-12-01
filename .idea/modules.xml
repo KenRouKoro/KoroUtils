@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AWTSupportForMinecraft.main.iml" filepath="$PROJECT_DIR$/.idea/modules/AWTSupportForMinecraft.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AWTSupportForMinecraft.test.iml" filepath="$PROJECT_DIR$/.idea/modules/AWTSupportForMinecraft.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/KoroUtils.iml" filepath="$PROJECT_DIR$/KoroUtils.iml" />
     </modules>
   </component>

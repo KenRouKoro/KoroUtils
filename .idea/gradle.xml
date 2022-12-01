@@ -5,19 +5,19 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/AWTSupportForMinecraft" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/HighUnrestricted" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/AWTSupportForMinecraft" />
+            <option value="$PROJECT_DIR$/HighUnrestricted" />
           </set>
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/HighUnrestricted" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/KubejsExtraTools" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/HighUnrestricted" />
+            <option value="$PROJECT_DIR$/KubejsExtraTools" />
           </set>
         </option>
       </GradleProjectSettings>
