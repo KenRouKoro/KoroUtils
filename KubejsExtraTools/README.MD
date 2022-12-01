@@ -9,7 +9,9 @@
 6. 异步支持
 7. Html处理支持  
 
-所以理论上汝能用这个mod写一个爬虫！（逃
+所以理论上汝能用这个mod写一个爬虫！（逃  
+
+**此文档部分源自Hutool文档**
 ## 教程
 ### HttpServer
 因为一些原因，HttpServer是单例化的（主要是担心one boom，all boom）
