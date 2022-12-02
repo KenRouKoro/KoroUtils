@@ -1,4 +1,4 @@
-package cn.korostudio.kubejsextratools.kubejs.events;
+package cn.korostudio.kubejsextratools.kubejs.events.eventJS;
 
 import cn.hutool.http.server.HttpServerRequest;
 import cn.hutool.http.server.HttpServerResponse;

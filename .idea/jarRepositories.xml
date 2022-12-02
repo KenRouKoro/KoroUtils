@@ -101,5 +101,10 @@
       <option name="name" value="UserLocalRemappedMods" />
       <option name="url" value="file:/$PROJECT_DIR$/KubejsExtraTools/.gradle/loom-cache/remapped_mods/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven4" />
+      <option name="name" value="maven4" />
+      <option name="url" value="https://repo.eclipse.org/content/repositories/paho-releases/" />
+    </remote-repository>
   </component>
 </project>

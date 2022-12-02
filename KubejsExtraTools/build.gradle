@@ -29,9 +29,19 @@ repositories {
         }
     }
     maven { url 'https://maven.blamejared.com' }
+    maven { url 'https://repo.eclipse.org/content/repositories/paho-releases/'}
     mavenLocal()
 }
+configurations {
+    includeModImplementation
+    includeImplementation
 
+    include.extendsFrom includeImplementation
+    include.extendsFrom includeModImplementation
+
+    implementation.extendsFrom includeImplementation
+    modImplementation.extendsFrom includeModImplementation
+}
 dependencies {
     // To change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -46,6 +56,8 @@ dependencies {
     //ws依赖
     implementation "org.java-websocket:Java-WebSocket:1.5.3"
     modImplementation "cn.korostudio:koro-utils-lib:1.0.0"
+    //MQTT依赖
+    includeImplementation "org.eclipse.paho:org.eclipse.paho.mqttv5.client:1.2.5"
 
 }
 

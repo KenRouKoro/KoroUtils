@@ -1,22 +1,13 @@
 package cn.korostudio.kubejsextratools.kubejs.bindings;
 
 import cn.hutool.core.thread.ThreadUtil;
-import cn.hutool.http.ContentType;
 import cn.hutool.http.HttpUtil;
 import cn.hutool.http.server.SimpleServer;
-import cn.hutool.http.server.action.Action;
 import cn.korostudio.kubejsextratools.kubejs.data.HttpServer;
 import cn.korostudio.kubejsextratools.kubejs.events.HttpServerEvents;
-import cn.korostudio.kubejsextratools.kubejs.events.PathEventJS;
-import dev.latvian.mods.kubejs.KubeJS;
-import dev.latvian.mods.kubejs.script.ScriptManager;
-import dev.latvian.mods.rhino.BaseFunction;
-import dev.latvian.mods.rhino.Function;
-import dev.latvian.mods.rhino.FunctionObject;
+import cn.korostudio.kubejsextratools.kubejs.events.eventJS.PathEventJS;
 import lombok.extern.slf4j.Slf4j;
 
-import java.lang.reflect.Method;
-import java.util.Arrays;
 @Slf4j
 public class HttpServerBindings {
     public static HttpServer httpServer = null;

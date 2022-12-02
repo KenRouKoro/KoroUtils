@@ -1,6 +1,7 @@
 # Kubejs Koro Extra Tools
 ## 简介
 这个mod为KubeJS加入了许多好玩(X)的功能支持，具体如下：
+
 1. HttpServer
 2. HttpClient
 3. 文件写入
@@ -8,8 +9,12 @@
 5. 正则表达式支持
 6. 异步支持
 7. Html处理支持  
+8. MQTT客户端
+9. WebSocket客户端
 
-所以理论上汝能用这个mod写一个爬虫！（逃  
+所以理论上汝能用这个mod写一个爬虫！  
+或着对着小爱来一句：“小爱同学，备份服务器。”（逃  
+
 
 **此文档部分源自Hutool文档**
 ## 教程
@@ -64,6 +69,84 @@ HttpClient.setMaxRedirectCount(10);//设置允许重定向的次数
 HttpClient.isHttps("https://baidu.com")//判断一个url是否为https请求
 
 ```
+### WebSocket
+#### 通用方法
+```javascript
+WebSocket.creatConnect("ws://127.0.0.1:8620");//创建websocket连接对象
+WebSocket.connect();//启动连接
+WebSocket.sendMessage();//发送信息，这个方法是线程安全的
+WebSocket.close();//关闭WebSocket连接，并清理环境
+```
+#### 事件
+```javascript
+//用法
+WebSocketEvents.event("event_name",event=>{});
+```
+#### 事件列表
+1. onClose WebSocket连接关闭事件
+2. onError WebSocket连接错误事件
+3. onMessage WebSocket收到信息事件
+4. onOpen WebSocket连接启动事件
+#### event内容
+使用getter方法进行访问
+```java
+protected String message;
+protected ServerHandshake serverHandshake;
+protected int code;
+protected String reason;
+protected boolean remote;
+```
+
+### MQTT
+tcp连接支持两种类型的连接：  
+TCP连接：tcp://  
+ssl/TLS保护的tcp连接：ssl://  
+例如：   
+tcp://localhost:1883   
+ssl://localhost:8883   
+如果未指定端口，则：  
+tcp：//“URI默认为1883  
+ssl://URI默认为8883  
+#### 通用方法
+```javascript
+MQTT.creatConnect("broker","clientId");//创建MQTT连接对象，broker是MQTTserverURI
+MQTT.setServerURIs(["URI1","URI2"]);//设置多个MQTT服务器
+MQTT.setCleanSession(true);//设置CleanSession
+MQTT.setPassword("password");//设置密码
+MQTT.setUsername("username");//设置用户名
+MQTT.setAutomaticReconnect(true);//设置自动重连
+MQTT.setMaxInflight(10);//设置最大等待数据
+MQTT.setKeepalive(10);//设置Keepalive
+MQTT.setWillPayloadAndTopic(2,"topic","payload",false);//设置服务质量(QOS),主题,负载,retain
+MQTT.connect();//启动连接
+MQTT.disconnect();//关闭连接
+
+```
+#### 事件
+```javascript
+MQTTEvents.event("event_name",()=>{});
+```
+#### 事件列表
+1. disconnected 连接关闭事件
+2. mqttErrorOccurred 连接错误事件
+3. messageArrived 收到订阅信息事件
+4. deliveryComplete 交付完成事件
+5. connectComplete 连接完成事件
+6. authPacketArrived 身份验证数据包到达事件
+
+#### event内容
+使用getter方法进行访问
+```java
+MqttDisconnectResponse disconnectResponse;
+String topic;
+MqttMessage message;
+IMqttToken token;
+boolean reconnect;
+String serverURI;
+int reasonCode;
+MqttProperties properties;
+```
+
 ### FileWriter
 ```javascript
 var writer = FileWriter.create("test.properties");

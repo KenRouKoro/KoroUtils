@@ -10,7 +10,11 @@ import cn.hutool.http.HtmlUtil;
 import cn.hutool.http.server.action.Action;
 import cn.korostudio.kubejsextratools.kubejs.bindings.HttpClientBindings;
 import cn.korostudio.kubejsextratools.kubejs.bindings.HttpServerBindings;
+import cn.korostudio.kubejsextratools.kubejs.bindings.MQTTBindings;
+import cn.korostudio.kubejsextratools.kubejs.bindings.WebSocketBindings;
 import cn.korostudio.kubejsextratools.kubejs.events.HttpServerEvents;
+import cn.korostudio.kubejsextratools.kubejs.events.MQTTEvents;
+import cn.korostudio.kubejsextratools.kubejs.events.WebSocketEvents;
 import dev.latvian.mods.kubejs.KubeJSPlugin;
 import dev.latvian.mods.kubejs.script.BindingsEvent;
 import dev.latvian.mods.kubejs.script.ScriptType;
@@ -42,11 +46,15 @@ public class ExtraToolsKubeJSPlugin extends KubeJSPlugin {
         event.add("FileReader", FileReader.class);
         event.add("Assert", Assert.class);
         event.add("Charset", Charset.class);
+        event.add("WebSocket", WebSocketBindings.class);
+        event.add("MQTT", MQTTBindings.class);
     }
 
     @Override
     public void registerEvents() {
         HttpServerEvents.GROUP.register();
+        WebSocketEvents.GROUP.register();
+        MQTTEvents.GROUP.register();
     }
 
     @Override
