@@ -1,4 +1,4 @@
-# Kubejs Extra Tools
+# Kubejs Koro Extra Tools
 ## 简介
 这个mod为KubeJS加入了许多好玩(X)的功能支持，具体如下：
 1. HttpServer
