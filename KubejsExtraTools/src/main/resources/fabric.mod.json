@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "kubejs-koro-extra-tools",
+  "version": "${version}",
+  "name": "Kubejs Koro Extra Tools",
+  "description": "kubejs-koro-extra-tools",
+  "authors": [
+    "KenRouKoro"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/kubejs-extra-tools/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "cn.korostudio.kubejsextratools.KubejsExtraTools"
+    ]
+  },
+  "mixins": [
+    "kubejs-extra-tools.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": ">=1.19.2",
+    "kubejs": "*",
+    "koro-utils-lib": "*"
+
+  }
+}

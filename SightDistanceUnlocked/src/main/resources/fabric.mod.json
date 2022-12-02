@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "sodium-sight-distance-unlocked",
+  "version": "${version}",
+  "name": "Sodium Sight Distance Unlocked",
+  "description": "钠视距解锁",
+  "authors": [
+    "KenRouKoro"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/sodium-sight-distance-unlocked/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "cn.korostudio.sodiumsightdistanceunlocked.client.SodiumSightDistanceUnlockedClient"
+    ]
+  },
+  "mixins": [
+    "sodium-sight-distance-unlocked.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": ">=1.19.2",
+    "koro-utils-lib": ">=1.0.0"
+  }
+}

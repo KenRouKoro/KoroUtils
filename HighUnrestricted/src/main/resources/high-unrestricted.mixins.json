@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cn.korostudio.highunrestricted.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "DimensionTypeRegistrarMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

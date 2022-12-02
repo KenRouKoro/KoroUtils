@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "multidimensional-manager",
+  "version": "${version}",
+  "name": "Multidimensional Manager",
+  "description": "The multidimensional manager",
+  "authors": [
+    "KenRouKoro"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/multidimensional-manager/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "cn.korostudio.multidimensionalmanager.client.MultidimensionalManagerClient"
+    ],
+    "server": [
+      "cn.korostudio.multidimensionalmanager.server.MultidimensionalManagerServer"
+    ]
+  },
+  "mixins": [
+    "multidimensional-manager.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  },
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/minecraft/server/MinecraftServer": ["cn/korostudio/multidimensionalmanager/mixin/interfaces/MinecraftServerFieldGetter"]
+    }
+  }
+}

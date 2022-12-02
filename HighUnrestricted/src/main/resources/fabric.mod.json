@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "high-unrestricted",
+  "version": "${version}",
+  "name": "High Unrestricted",
+  "description": "世界建筑高度解锁",
+  "authors": [
+    "KenRouKoro"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/high-unrestricted/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "cn.korostudio.highunrestricted.HighUnrestricted"
+    ]
+  },
+  "mixins": [
+    "high-unrestricted.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": ">=1.19.2",
+    "koro-utils-lib": ">=1.0.0"
+  }
+}
